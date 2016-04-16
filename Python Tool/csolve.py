@@ -65,7 +65,7 @@ choice = '''
  2  - Decode base32
  3  - Decode base64
  4  - Decode AES (CFB\ECB)
- 5  - Decode Caeser (Brute-Force)
+ 5  - Decode Caesar (Brute-Force)
  6  - Encode hex
  7  - Encode base32
  8  - Encode base64
@@ -74,7 +74,7 @@ choice = '''
  A  - Decode URL
  B  - Decode Morse
  C  - Encode Morse
- D  - Decode Subtition
+ D  - Decode Substitution
 
   ######## GDB Tools ##############
   
