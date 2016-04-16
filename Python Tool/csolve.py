@@ -74,7 +74,7 @@ choice = '''
  A  - Decode URL
  B  - Decode Morse
  C  - Encode Morse
- D  - Decode Substitution
+ D  - Decode Subtition
 
   ######## GDB Tools ##############
   
@@ -140,7 +140,7 @@ if "1" in user_input:
 
 
 
-if "2" in user_input:
+elif "2" in user_input:
 
     base32_input = raw_input("Enter You Base32 to Decode : ")
 
@@ -150,7 +150,7 @@ if "2" in user_input:
 
 
 
-if "3" in user_input:
+elif "3" in user_input:
 
     base64_input = raw_input("Enter You Base64 to Decode : ")
 
@@ -160,7 +160,7 @@ if "3" in user_input:
 
 
 
-if "6" in user_input:
+elif "6" in user_input:
 
     hex2_input = raw_input("Enter Your text To encode in Hex : ")
 
@@ -176,7 +176,7 @@ if "6" in user_input:
 
 
 
-if "7" in user_input:
+elif "7" in user_input:
 
     base32_input_2 = raw_input("Enter You Base32 to Encode : ")
 
@@ -186,7 +186,7 @@ if "7" in user_input:
 
 
 
-if "8" in user_input:
+elif "8" in user_input:
 
     base64_input_2 = raw_input("Enter You Base64 to Encode : ")
 
@@ -196,7 +196,7 @@ if "8" in user_input:
 
 
 
-if "4" in user_input:
+elif "4" in user_input:
 
     aes_input = raw_input("Enter Your Text to decode : ")
 
@@ -230,7 +230,7 @@ if "4" in user_input:
 
 
 
-if "9" in user_input:
+elif "9" in user_input:
 
     aes_input1 = raw_input("Enter Your Text to encode : ")
 
@@ -262,7 +262,7 @@ if "9" in user_input:
 
         os.close()
 
-if "5" in user_input:
+elif "5" in user_input:
 
     caeser_input = raw_input("Enter Your Cipher Text : ")
 
@@ -292,7 +292,7 @@ if "5" in user_input:
 
 
 
-if "0" in user_input:
+elif "0" in user_input:
 
    rot13_input = raw_input("Enter Your ROT13 to decode : ")
 
@@ -302,7 +302,7 @@ if "0" in user_input:
 
 
 
-if "A" in user_input:
+elif "A" in user_input:
 
     uri_input = raw_input("Enter Your url to Decode : ")
 
@@ -312,7 +312,7 @@ if "A" in user_input:
 
 
 
-if "B" in user_input:
+elif "B" in user_input:
 
    morse_input = raw_input("Enter Your Morse Message : ")
 
@@ -354,7 +354,7 @@ if "B" in user_input:
 
   
 
-if "C" in user_input:
+elif "C" in user_input:
 
     
 
@@ -406,7 +406,7 @@ if "C" in user_input:
 
 
 
-if "E" in user_input:
+elif "E" in user_input:
 
     shell_c_input = raw_input("Convert hex code to shellcode : ")
 
@@ -424,7 +424,7 @@ if "E" in user_input:
 
 
 
-if "F" in user_input:
+elif "F" in user_input:
 
 
 
@@ -472,7 +472,7 @@ if "F" in user_input:
 
 
 
-if "D" in user_input:
+elif "D" in user_input:
     fitnes = raw_input("Enter Your Dic ( dic1 to dic5 ) : ")
     fitness = ngram_score('dic/'+fitnes + ".txt") 
 
@@ -516,7 +516,7 @@ if "D" in user_input:
           print '    plaintext: '+ss.decipher(ctext)
 
 
-if "H" in   user_input:
+elif "H" in   user_input:
      message = raw_input("Enter ASCII codes: ")
 
      decodedMessage = ""
@@ -527,7 +527,7 @@ if "H" in   user_input:
        print "Decoded message:", decodedMessage
 
 
-if "I" in user_input:
+elif "I" in user_input:
     message_to_rev = raw_input("Enter Your Message to reverse: ")
     mssg2 =  message_to_rev.split(" ")
     for i in range(len(mssg2)):
@@ -536,7 +536,7 @@ if "I" in user_input:
         print("Your Reversed Text %s is :" + reverse)%i
         
         
-if "G" in  user_input:
+elif "G" in  user_input:
     url = raw_input("Enter Your Vulnerable Website : ")
 
     strings = string.letters + string.digits + string.punctuation
@@ -574,5 +574,6 @@ if "G" in  user_input:
     print   tables
     
 
-
+else:
+    print("Game Over!!!")
     
