@@ -30,6 +30,10 @@ To Encrypt / Decrypt  :
 To Get information about Your Target & Exploit
 
 - Information Gatering
+   * Nmap 
+   * Robots
+   * Whois
+   * Ip Scanner
 - Blind Sql Exploit
 
 Usage : 
